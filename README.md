@@ -1,71 +1,139 @@
-# Getting Started with Create React App
+# clone-facebook-react-mongodb
+![React](https://img.shields.io/badge/React-18-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+![CSS](https://img.shields.io/badge/CSS3-Styled-blueviolet)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Facebook Clone (React)
 
-## Available Scripts
+Este projeto é um **clone da interface do Facebook**, desenvolvido com **React** para fins de estudo e prática de desenvolvimento front-end. O foco está na componentização, organização de layout e simulação de funcionalidades comuns de uma rede social.
 
-In the project directory, you can run:
+## 📸 Preview
 
-### `npm start`
+O projeto inclui:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Feed de postagens
+* Página de perfil
+* Sidebar com navegação
+* Rightbar com amigos online e informações do usuário
+* Layout responsivo (desktop, tablet e mobile)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+* **React** (Create React App)
+* **JavaScript (ES6+)**
+* **CSS puro**
+* **HTML5**
+* **Dados mockados (dummyData)**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Estrutura do Projeto
 
-### `npm run build`
+```text
+src/
+├── components/
+│   ├── topbar/
+│   ├── sidebar/
+│   ├── feed/
+│   ├── post/
+│   ├── rightbar/
+│   └── share/
+├── pages/
+│   ├── home/
+│   └── profile/
+├── dummyData.js
+├── App.js
+└── index.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧩 Funcionalidades Implementadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Página **Home** com feed de postagens
+* Página **Profile** com:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  * Capa do usuário
+  * Foto de perfil
+  * Informações pessoais
+  * Lista de amigos
+* Layout em **grid responsivo** (3 → 2 → 1 colunas)
+* **Tooltips** em nomes truncados
+* Componentes reutilizáveis
+* Scroll customizado
+* Navegação simulada entre páginas
 
-### `npm run eject`
+## 📱 Responsividade
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O layout se adapta automaticamente:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Desktop:** 3 colunas
+* **Tablet:** 2 colunas
+* **Mobile:** 1 coluna
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ▶️ Como Executar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pré-requisitos
 
-## Learn More
+* Node.js (versão LTS recomendada)
+* npm ou yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Passos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clonar o repositório
+git clone https://github.com/mauroslucios/template-facebook-react-mongodb.git
 
-### Code Splitting
+# Entrar na pasta do projeto
+cd template-facebook-react-mongodb
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Instalar dependências
+npm install
 
-### Analyzing the Bundle Size
+# Iniciar o projeto
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O projeto será executado em:
 
-### Making a Progressive Web App
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧪 Dados Simulados
 
-### Advanced Configuration
+As informações de usuários, postagens e amigos estão em:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```js
+src/dummyData.js
+```
 
-### Deployment
+Isso permite testar o layout sem necessidade de backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔮 Próximos Passos (Roadmap)
 
-### `npm run build` fails to minify
+* Integração com backend (Node.js / API REST)
+* Autenticação de usuários
+* Upload real de imagens
+* Likes e comentários dinâmicos
+* Chat em tempo real
+* Integração com banco de dados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# template-facebook-react-mongodb
+## 🎯 Objetivo do Projeto
+
+Este projeto tem caráter **educacional**, sendo ideal para:
+
+* Treinar React e componentização
+* Praticar CSS e layout responsivo
+* Simular uma aplicação real de rede social
+* Servir como base para projetos mais avançados
+
+## 👤 Autor
+
+**Mauro Lúcio P. da Silva**
+
+* Desenvolvedor
+* Cientista de Dados
+* Criador do projeto *Health Data Insights*
+
+---
+
+
