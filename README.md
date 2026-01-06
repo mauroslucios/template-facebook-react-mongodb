@@ -131,7 +131,8 @@ Este projeto tem caráter **educacional**, sendo ideal para:
 **Mauro Lúcio P. da Silva**
 
 * Desenvolvedor
-* Cientista de Dados
+* Engenheiro de Dados
+* Devops
 * Criador do projeto *Health Data Insights*
 
 ---
