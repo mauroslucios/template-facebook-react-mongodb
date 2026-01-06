@@ -1,0 +1,173 @@
+.rightbar {
+  flex: 3.5;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  position: sticky;
+  top: 50px;
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: rgb(179, 179, 179);
+}
+
+.rightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+}
+
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.rightbarTitle {
+  margin-bottom: 20px;
+}
+
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.rightbarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rightbarProfileImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbarInfo {
+  margin-bottom: 30px;
+} 
+
+.rightbarInfoItem {
+  margin-bottom: 10px;
+}
+
+.rightbarInfoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbarInfoValue {
+  font-weight: 400;
+}
+
+.rightbarFollowings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+} 
+
+.rightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.rightbarFollowingImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+
+.rightbarFollowingName {
+  position: relative;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  
+}
+
+/* Tooltip */
+.rightbarFollowingName .tooltip {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #333;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.rightbarFollowingName:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.rightbarFollowingImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .rightbarFollowings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .rightbarFollowings {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
